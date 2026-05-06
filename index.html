@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jisca Fashion — Boutique Mode & Stylisme | Bénin</title>
+  <meta name="description" content="Jisca Fashion - Boutique de mode et stylisme au Bénin. Services de design fashion, styling pour entreprises et particuliers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#C9A84C" />
+  <meta property="og:title" content="Jisca Fashion — Mode &amp; Stylisme Bénin" />
+  <meta property="og:description" content="Boutique de mode et stylisme au Bénin. Design fashion, couture sur mesure pour entreprises et particuliers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jiscafashion.bj" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+
+  <div id="loader"><div class="loader-inner"><div class="loader-logo">JF</div><div class="loader-bar"><div class="loader-progress"></div></div></div></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <header id="header">
+    <div class="nav-wrapper">
+      <div class="logo"><a href="#home"><span class="logo-jisca">JISCA</span><span class="logo-fashion">FASHION</span></a></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Accueil</a>
+        <a href="#about" class="nav-link">À Propos</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#collection" class="nav-link">Collection</a>
+        <a href="#lookbook" class="nav-link">Lookbook</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Panier">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header"><h3>Mon Panier</h3><button class="cart-close" id="cartClose">✕</button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><p>Votre panier est vide</p></div></div>
+    <div class="cart-footer" id="cartFooter" style="display:none"><div class="cart-total"><span>Total</span><span id="cartTotal">0 FCFA</span></div><button class="btn-checkout">Commander</button></div>
+  </aside>
+
+  <section id="home" class="hero">
+    <div class="hero-bg"><div class="hero-orb orb1"></div><div class="hero-orb orb2"></div><div class="hero-orb orb3"></div><div class="hero-grain"></div></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Bénin · Afrique de l'Ouest ✦</div>
+      <h1 class="hero-title"><span class="line1">L'Art de</span><span class="line2"><em>la Mode</em></span><span class="line3">Africaine</span></h1>
+      <p class="hero-sub">Design fashion · Stylisme · Prêt-à-porter<br>Pour les entreprises &amp; particuliers</p>
+      <div class="hero-ctas"><a href="#collection" class="btn-primary">Découvrir la Collection</a><a href="#services" class="btn-outline">Nos Services</a></div>
+    </div>
+    <div class="hero-scroll"><span>Défiler</span><div class="scroll-line"></div></div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Clients satisfaits</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Années d'expérience</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Made in Bénin</span></div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap"><div class="marquee-track"><span>Mode · Stylisme · Élégance · Couture · Fashion · Design · Bénin · Luxe · Mode · Stylisme · Élégance · Couture · Fashion · Design · Bénin · Luxe · Mode · Stylisme · Élégance · Couture · Fashion · Design · Bénin · Luxe ·</span></div></div>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrapper">
+            <div class="about-img-bg"></div>
+            <div class="about-img-frame"><div class="img-placeholder"><div class="placeholder-icon">✦</div><span>Jisca Fashion</span></div></div>
+          </div>
+          <div class="about-badge-float"><span class="badge-year">2016</span><span class="badge-text">Fondée à<br>Cotonou</span></div>
+        </div>
+        <div class="about-text">
+          <div class="section-tag">Notre Histoire</div>
+          <h2 class="section-title">L'Élégance<br><em>Africaine</em> Réinventée</h2>
+          <p class="about-desc">Jisca Fashion est née d'une passion profonde pour la mode africaine et le désir de sublimer l'identité vestimentaire des béninois. Nous créons des pièces qui racontent des histoires, mêlant traditions ancestrales et tendances contemporaines.</p>
+          <p class="about-desc">Notre équipe de stylistes et designers passionnés travaille main dans la main avec chaque client pour créer des looks uniques, que ce soit pour des événements d'entreprise ou des occasions personnelles spéciales.</p>
+          <div class="about-values">
+            <div class="value-item"><div class="value-icon">◈</div><div><strong>Authenticité</strong><p>Chaque création reflète la richesse culturelle béninoise</p></div></div>
+            <div class="value-item"><div class="value-icon">◈</div><div><strong>Excellence</strong><p>Qualité premium dans chaque couture, chaque détail</p></div></div>
+          </div>
+          <a href="#contact" class="btn-primary">Travailler avec Nous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Ce que nous faisons</div>
+        <h2 class="section-title">Nos <em>Services</em></h2>
+        <p class="section-sub">Des solutions mode complètes pour vous accompagner dans votre parcours stylisme</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-num">01</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="20" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M10 50c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Stylisme Personnel</h3><p>Conseil en image, shopping personnalisé et création d'une garde-robe qui vous ressemble vraiment.</p><div class="service-price">À partir de 25 000 FCFA</div><a href="#contact" class="service-link">Réserver →</a></div>
+        <div class="service-card featured"><div class="service-badge">Populaire</div><div class="service-num">02</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><rect x="10" y="15" width="40" height="30" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M20 25h20M20 32h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Design Corporate</h3><p>Uniformes et tenues professionnelles sur mesure pour valoriser l'image de votre entreprise.</p><div class="service-price">Devis sur mesure</div><a href="#contact" class="service-link">Demander un devis →</a></div>
+        <div class="service-card"><div class="service-num">03</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><path d="M30 10L20 20h20L30 10z" stroke="currentColor" stroke-width="1.5"/><rect x="15" y="20" width="30" height="30" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M23 35l4 4 10-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Couture sur Mesure</h3><p>Création de pièces uniques taillées à vos mensurations exactes, dans les tissus de votre choix.</p><div class="service-price">À partir de 35 000 FCFA</div><a href="#contact" class="service-link">Commander →</a></div>
+        <div class="service-card"><div class="service-num">04</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M30 20v10l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Location de Tenues</h3><p>Large collection de tenues élégantes disponibles à la location pour vos événements spéciaux.</p><div class="service-price">À partir de 15 000 FCFA</div><a href="#contact" class="service-link">Voir disponibilités →</a></div>
+        <div class="service-card"><div class="service-num">05</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><path d="M10 30c0-11 9-20 20-20s20 9 20 20-9 20-20 20" stroke="currentColor" stroke-width="1.5"/><circle cx="30" cy="30" r="5" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Fashion Shooting</h3><p>Organisation complète de séances photo mode pour particuliers, marques et campagnes publicitaires.</p><div class="service-price">À partir de 50 000 FCFA</div><a href="#contact" class="service-link">Planifier →</a></div>
+        <div class="service-card"><div class="service-num">06</div><div class="service-icon"><svg viewBox="0 0 60 60" fill="none"><path d="M20 10h20v10l5 5-5 5v20H20V30l-5-5 5-5V10z" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Consultance Mode</h3><p>Ateliers et formations en tendances mode africaine pour les professionnels et passionnés.</p><div class="service-price">À partir de 20 000 FCFA</div><a href="#contact" class="service-link">S'inscrire →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection" class="collection">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Boutique en ligne</div>
+        <h2 class="section-title">Notre <em>Collection</em></h2>
+        <p class="section-sub">Des pièces soigneusement sélectionnées, alliant modernité et héritage africain</p>
+      </div>
+      <div class="collection-filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="femme">Femme</button>
+        <button class="filter-btn" data-filter="homme">Homme</button>
+        <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section id="lookbook" class="lookbook">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Lookbook</div>
+        <h2 class="section-title">Notre <em>Galerie</em></h2>
+        <p class="section-sub">Inspirations, créations et moments capturés par l'objectif de Jisca Fashion</p>
+      </div>
+    </div>
+    <div class="gallery-masonry">
+      <div class="gallery-item gi-tall" data-lightbox="0"><div class="gi-inner"><span>👗</span><div class="gi-overlay"><span>Collection Femme</span></div></div></div>
+      <div class="gallery-item gi-wide" data-lightbox="1"><div class="gi-inner"><span>🕴️</span><div class="gi-overlay"><span>Style Corporate</span></div></div></div>
+      <div class="gallery-item" data-lightbox="2"><div class="gi-inner"><span>👰</span><div class="gi-overlay"><span>Mariage de Luxe</span></div></div></div>
+      <div class="gallery-item" data-lightbox="3"><div class="gi-inner"><span>📿</span><div class="gi-overlay"><span>Accessoires</span></div></div></div>
+      <div class="gallery-item gi-tall" data-lightbox="4"><div class="gi-inner"><span>👘</span><div class="gi-overlay"><span>Boubou Royal</span></div></div></div>
+      <div class="gallery-item" data-lightbox="5"><div class="gi-inner"><span>🥻</span><div class="gi-overlay"><span>Kente &amp; Ankara</span></div></div></div>
+      <div class="gallery-item gi-wide" data-lightbox="6"><div class="gi-inner"><span>✨</span><div class="gi-overlay"><span>Fashion Shooting</span></div></div></div>
+      <div class="gallery-item" data-lightbox="7"><div class="gi-inner"><span>👔</span><div class="gi-overlay"><span>Uniforme Premium</span></div></div></div>
+    </div>
+    <div class="gallery-cta"><a href="https://instagram.com" target="_blank" class="btn-outline">Voir plus sur Instagram →</a></div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Comment ça marche</div>
+        <h2 class="section-title">Notre <em>Processus</em></h2>
+        <p class="section-sub">4 étapes simples pour transformer votre vision en réalité</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step"><div class="step-number">01</div><div class="step-icon">💬</div><h3>Consultation</h3><p>Un échange gratuit de 30 minutes pour comprendre vos besoins, votre style et vos contraintes.</p><div class="step-arrow">→</div></div>
+        <div class="process-step"><div class="step-number">02</div><div class="step-icon">✏️</div><h3>Design &amp; Choix</h3><p>Nos stylistes créent des propositions sur mesure. Vous choisissez tissus, couleurs et coupes.</p><div class="step-arrow">→</div></div>
+        <div class="process-step"><div class="step-number">03</div><div class="step-icon">🪡</div><h3>Création</h3><p>Nos artisans confectionnent votre tenue avec soin et passion. Délai : 7 à 21 jours.</p><div class="step-arrow">→</div></div>
+        <div class="process-step"><div class="step-number">04</div><div class="step-icon">🎁</div><h3>Livraison</h3><p>Votre création livrée dans un emballage élégant. Retouches gratuites si nécessaire.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+    <div class="container"><div class="section-tag brands-tag">Ils nous font confiance</div></div>
+    <div class="brands-track-wrap">
+      <div class="brands-slide">
+        <div class="brand-logo">ATOL Bénin</div><div class="brand-logo">Hotel Azalaï</div><div class="brand-logo">MTN Bénin</div><div class="brand-logo">SGBBE</div><div class="brand-logo">Ecobank</div><div class="brand-logo">UBA Bénin</div>
+        <div class="brand-logo">ATOL Bénin</div><div class="brand-logo">Hotel Azalaï</div><div class="brand-logo">MTN Bénin</div><div class="brand-logo">SGBBE</div><div class="brand-logo">Ecobank</div><div class="brand-logo">UBA Bénin</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-left">
+          <div class="section-tag">FAQ</div>
+          <h2 class="section-title">Questions<br><em>Fréquentes</em></h2>
+          <p>Vous avez d'autres questions ? Contactez-nous, nous répondons sous 24h.</p>
+          <a href="#contact" class="btn-primary" style="margin-top:32px;display:inline-flex;">Nous contacter</a>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item"><button class="faq-q">Quel est le délai de confection pour une tenue sur mesure ? <span class="faq-icon">+</span></button><div class="faq-a"><p>Le délai varie de 7 jours pour une pièce simple à 21 jours pour une tenue élaborée. Nous proposons aussi un service express en 72h pour certaines pièces.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Livrez-vous en dehors de Cotonou ? <span class="faq-icon">+</span></button><div class="faq-a"><p>Oui ! Nous livrons dans tout le Bénin et en Afrique de l'Ouest (Nigeria, Togo, Ghana). Nous expédions également en Europe.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Comment se passe la prise de mesures ? <span class="faq-icon">+</span></button><div class="faq-a"><p>Vous pouvez venir en boutique pour une prise de mesures professionnelle gratuite. À distance, nous vous envoyons un guide détaillé avec photos explicatives.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Proposez-vous des retouches après livraison ? <span class="faq-icon">+</span></button><div class="faq-a"><p>Une retouche gratuite est offerte dans les 15 jours suivant la livraison si la tenue ne correspond pas parfaitement à vos mesures.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Quels modes de paiement acceptez-vous ? <span class="faq-icon">+</span></button><div class="faq-a"><p>Espèces, Mobile Money (MTN, Moov), virement bancaire et carte bancaire. Un acompte de 50 % est requis à la commande pour les créations sur mesure.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-bg"></div>
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-icon">✦</div>
+        <h2>Restez à la <em>Mode</em></h2>
+        <p>Abonnez-vous pour recevoir nos nouvelles collections, offres exclusives et conseils stylisme.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="newsletter-input-wrap">
+            <input type="email" placeholder="Votre adresse email..." required />
+            <button type="submit" class="btn-primary">S'abonner</button>
+          </div>
+          <div class="newsletter-note">🔒 Nous respectons votre vie privée. Désabonnement en 1 clic.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Témoignages</div>
+        <h2 class="section-title">Ce qu'ils <em>disent</em></h2>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Jisca Fashion a transformé l'image de notre équipe. Les uniformes sont magnifiques et notre marque est désormais reconnaissable. Un travail exceptionnel !"</p><div class="testimonial-author"><div class="author-avatar">AM</div><div><strong>Amadou Mensah</strong><span>DRH, Société ATOL Bénin</span></div></div></div>
+          <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Ma robe de mariage sur mesure était un rêve devenu réalité. L'équipe a compris exactement ma vision et l'a sublimée. Je recommande à 1000% !"</p><div class="testimonial-author"><div class="author-avatar">FK</div><div><strong>Fatima Kéïta</strong><span>Particulière, Cotonou</span></div></div></div>
+          <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Le service de stylisme personnel a changé ma façon de m'habiller. Je me sens plus confiant au bureau et dans mes sorties. Merci Jisca Fashion !"</p><div class="testimonial-author"><div class="author-avatar">KA</div><div><strong>Kofi Adjovi</strong><span>Entrepreneur, Porto-Novo</span></div></div></div>
+          <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"La qualité des tissus et la finition des coutures sont impeccables. Jisca Fashion c'est le luxe africain à son meilleur. Cliente fidèle depuis 3 ans."</p><div class="testimonial-author"><div class="author-avatar">YD</div><div><strong>Yemi Dossou</strong><span>Styliste indépendante</span></div></div></div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn">←</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn">→</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-bg"><div class="cta-orb"></div></div>
+    <div class="container"><div class="cta-content"><h2>Prêt à transformer votre style ?</h2><p>Consultez nos experts et créez votre look parfait dès aujourd'hui</p><a href="#contact" class="btn-primary btn-large">Prendre Rendez-vous</a></div></div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag">Nous contacter</div>
+          <h2 class="section-title">Parlons de votre <em>projet</em></h2>
+          <p>Que vous soyez une entreprise ou un particulier pour une occasion spéciale, nous sommes là pour vous.</p>
+          <div class="contact-details">
+            <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Adresse</strong><span>Cotonou, Bénin — Quartier Akpakpa</span></div></div>
+            <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Téléphone / WhatsApp</strong><span>+229 XX XX XX XX</span></div></div>
+            <div class="contact-item"><div class="contact-icon">✉️</div><div><strong>Email</strong><span>contact@jiscafashion.bj</span></div></div>
+            <div class="contact-item"><div class="contact-icon">🕐</div><div><strong>Horaires</strong><span>Lun–Sam : 08h–19h · Dim : Sur RDV</span></div></div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 100 8 4 4 0 000-8z"/><path d="M9 12V4h4s0 4 4 4"/></svg></a>
+            <a href="https://wa.me/22900000000" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+          </div>
+          <div class="map-placeholder"><div class="map-inner"><span>📍</span><p>Cotonou, Bénin<br><small>Quartier Akpakpa</small></p></div></div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">Prénom</label><input type="text" id="firstName" placeholder="Votre prénom" required /></div>
+              <div class="form-group"><label for="lastName">Nom</label><input type="text" id="lastName" placeholder="Votre nom" required /></div>
+            </div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="votre@email.com" required /></div>
+            <div class="form-group"><label for="phone">Téléphone / WhatsApp</label><input type="tel" id="phone" placeholder="+229 XX XX XX XX" /></div>
+            <div class="form-group">
+              <label for="service">Service souhaité</label>
+              <select id="service"><option value="">Choisir un service...</option><option>Stylisme Personnel</option><option>Design Corporate</option><option>Couture sur Mesure</option><option>Location de Tenues</option><option>Fashion Shooting</option><option>Consultance Mode</option></select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget estimé</label>
+              <select id="budget"><option value="">Sélectionner un budget...</option><option>Moins de 25 000 FCFA</option><option>25 000 – 50 000 FCFA</option><option>50 000 – 100 000 FCFA</option><option>Plus de 100 000 FCFA</option><option>Je préfère un devis</option></select>
+            </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" rows="4" placeholder="Décrivez votre projet..."></textarea></div>
+            <button type="submit" class="btn-primary btn-full"><span>Envoyer le message</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+            <div class="form-success" id="formSuccess">✓ Message envoyé ! Nous vous contacterons dans les 24h.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo"><span class="logo-jisca">JISCA</span><span class="logo-fashion">FASHION</span></div>
+            <p>L'art de la mode africaine, sublimée pour les entreprises et particuliers du Bénin et d'Afrique de l'Ouest.</p>
+            <div class="footer-badge">Made with ♥ in Bénin</div>
+            <div class="footer-social">
+              <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+              <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+              <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 12a4 4 0 100 8 4 4 0 000-8z"/><path d="M9 12V4h4s0 4 4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#home">Accueil</a></li><li><a href="#about">À Propos</a></li><li><a href="#services">Services</a></li><li><a href="#collection">Collection</a></li><li><a href="#lookbook">Lookbook</a></li><li><a href="#contact">Contact</a></li></ul></div>
+          <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Stylisme Personnel</a></li><li><a href="#services">Design Corporate</a></li><li><a href="#services">Couture sur Mesure</a></li><li><a href="#services">Location de Tenues</a></li><li><a href="#services">Fashion Shooting</a></li><li><a href="#services">Consultance Mode</a></li></ul></div>
+          <div class="footer-col"><h4>Contact</h4><ul><li>📍 Cotonou, Bénin — Akpakpa</li><li>📞 +229 XX XX XX XX</li><li>✉️ contact@jiscafashion.bj</li><li>🕐 Lun–Sam : 08h–19h</li><li>🌐 www.jiscafashion.bj</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Jisca Fashion. Tous droits réservés.</p>
+        <div class="footer-legal"><a href="#">Confidentialité</a><a href="#">Conditions</a><a href="#">Mentions légales</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="product-modal" id="productModal"><button class="modal-close" id="modalClose">✕</button><div class="modal-content" id="modalContent"></div></div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-inner" id="lightboxInner"></div>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+  </div>
+
+  <a href="https://wa.me/22900000000?text=Bonjour%20Jisca%20Fashion!" class="whatsapp-float" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">Chat WhatsApp</span>
+  </a>
+
+  <button class="back-top" id="backTop">↑</button>
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
